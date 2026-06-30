@@ -444,8 +444,10 @@
                     </div>
                 </div>
                 <div class="contact-form-wrapper">
-                    <!-- Formulario vía Formspree: crea cuenta en formspree.io y reemplaza FORMSPREE_TOKEN -->
-                    <form class="contact-form" id="contact-form" action="https://formspree.io/f/FORMSPREE_TOKEN" method="POST">
+                    <!-- Formulario vía Web3Forms -->
+                    <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="20e314e7-54e8-4140-bac9-821034558a04">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
                         <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
                         <div class="form-group">
                             <label for="name">Nombre</label>
