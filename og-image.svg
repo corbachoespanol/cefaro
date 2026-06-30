@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="bg-grad" cx="80%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#0c1525"/>
+      <stop offset="100%" stop-color="#06090e"/>
+    </radialGradient>
+    <radialGradient id="beam" cx="0%" cy="50%" r="100%">
+      <stop offset="0%" stop-color="#ffd54f" stop-opacity="0.6"/>
+      <stop offset="40%" stop-color="#ffd54f" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ffd54f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd54f" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ffd54f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg-grad)"/>
+
+  <!-- Decorative stars -->
+  <circle cx="120" cy="70" r="1.5" fill="white" opacity="0.5"/>
+  <circle cx="280" cy="45" r="1" fill="white" opacity="0.4"/>
+  <circle cx="450" cy="90" r="2" fill="white" opacity="0.3"/>
+  <circle cx="600" cy="35" r="1.5" fill="white" opacity="0.6"/>
+  <circle cx="200" cy="140" r="1" fill="white" opacity="0.35"/>
+  <circle cx="380" cy="160" r="1.5" fill="white" opacity="0.4"/>
+  <circle cx="160" cy="200" r="1" fill="white" opacity="0.3"/>
+  <circle cx="520" cy="55" r="1" fill="white" opacity="0.45"/>
+  <circle cx="670" cy="120" r="1.5" fill="white" opacity="0.3"/>
+  <circle cx="750" cy="60" r="1" fill="white" opacity="0.5"/>
+
+  <!-- Lighthouse beam (from right side) -->
+  <polygon points="950,130 400,600 1200,600" fill="url(#beam)"/>
+
+  <!-- Lighthouse (right side, large) -->
+  <g transform="translate(850, 60) scale(2.8)">
+    <!-- Base rock -->
+    <path d="M5,190 Q50,180 95,190 L95,200 L5,200 Z" fill="#0c0e14"/>
+    <path d="M15,183 Q50,176 85,183 L85,193 L15,193 Z" fill="#151922"/>
+    <!-- Tower: bottom white -->
+    <polygon points="36,180 64,180 61,140 39,140" fill="#f8f9fa"/>
+    <!-- Tower: middle red -->
+    <polygon points="39,140 61,140 58,100 42,100" fill="#e63946"/>
+    <!-- Tower: top white -->
+    <polygon points="42,100 58,100 55,60 45,60" fill="#f8f9fa"/>
+    <!-- Small red ring -->
+    <polygon points="45,60 55,60 54,52 46,52" fill="#e63946"/>
+    <!-- Balcony -->
+    <rect x="42" y="47" width="16" height="5" rx="1" fill="#111"/>
+    <line x1="43" y1="43" x2="57" y2="43" stroke="#333" stroke-width="0.8"/>
+    <!-- Lantern room -->
+    <rect x="46" y="30" width="8" height="13" fill="rgba(255,255,255,0.15)" stroke="#333" stroke-width="0.8"/>
+    <!-- Light glow -->
+    <circle cx="50" cy="35" r="10" fill="url(#glow)"/>
+    <circle cx="50" cy="35" r="3.5" fill="#ffd54f"/>
+    <!-- Dome -->
+    <path d="M45,30 Q50,18 55,30 Z" fill="#111"/>
+    <rect x="49" y="14" width="2" height="4" fill="#111"/>
+    <circle cx="50" cy="12" r="1.5" fill="#ffd54f"/>
+  </g>
+
+  <!-- Left accent bar -->
+  <rect x="64" y="140" width="5" height="220" rx="2.5" fill="#e63946"/>
+
+  <!-- Brand name -->
+  <text x="90" y="250" font-family="'Outfit', 'Helvetica Neue', Arial, sans-serif" font-size="110" font-weight="800" fill="#f8f9fa" letter-spacing="-2">CEFARO</text>
+  <text x="90" y="310" font-family="'Outfit', 'Helvetica Neue', Arial, sans-serif" font-size="52" font-weight="800" fill="#e63946" letter-spacing="1">.net</text>
+
+  <!-- Tagline -->
+  <text x="90" y="380" font-family="'Plus Jakarta Sans', 'Helvetica Neue', Arial, sans-serif" font-size="30" fill="#8a99ad" font-weight="400">Páginas web e informática para negocios de</text>
+  <text x="90" y="420" font-family="'Plus Jakarta Sans', 'Helvetica Neue', Arial, sans-serif" font-size="30" fill="#8a99ad" font-weight="400">Baiona, Val Miñor y Vigo</text>
+
+  <!-- Bottom info bar -->
+  <rect x="0" y="555" width="1200" height="75" fill="rgba(0,0,0,0.4)"/>
+  <circle cx="90" cy="592" r="8" fill="#e63946"/>
+  <text x="112" y="598" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="22" fill="#8a99ad">info@cefaro.net</text>
+  <circle cx="360" cy="592" r="8" fill="#e63946"/>
+  <text x="382" y="598" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="22" fill="#8a99ad">Baiona · Val Miñor · Pontevedra</text>
+</svg>
