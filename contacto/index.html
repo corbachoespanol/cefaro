@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto | Cefaro.net — Hablemos de tu proyecto</title>
+    <meta name="description" content="Contacta con Cefaro: empresa de informática y diseño web en Baiona (Val Miñor). Escríbenos o llámanos para presupuesto sin compromiso. Respondemos en menos de 24 horas.">
+    <meta name="robots" content="index, follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="canonical" href="https://cefaro.net/contacto/">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cefaro.net/contacto/">
+    <meta property="og:title" content="Contacto — Cefaro.net">
+    <meta property="og:description" content="Contacta con nosotros para presupuesto sin compromiso. Informática y webs en Baiona, Val Miñor y Vigo.">
+    <meta property="og:image" content="https://cefaro.net/og-image.png">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Cefaro.net">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contacto — Cefaro.net",
+      "url": "https://cefaro.net/contacto/",
+      "description": "Página de contacto de Cefaro, empresa de informática en Baiona, Val Miñor.",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cefaro.net/"},
+          {"@type": "ListItem", "position": 2, "name": "Contacto", "item": "https://cefaro.net/contacto/"}
+        ]
+      }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <canvas id="stars-canvas"></canvas>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="/" class="logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 100 100" width="30" height="30">
+                        <polygon points="40,90 60,90 55,40 45,40" fill="#f8f9fa" />
+                        <polygon points="45,40 55,40 53,20 47,20" fill="#e63946" />
+                        <circle cx="50" cy="15" r="5" fill="#ffd54f" />
+                    </svg>
+                </span>
+                <span class="logo-text">CEFARO<span class="dot">.net</span></span>
+            </a>
+            <nav class="nav-links" aria-label="Menú principal">
+                <a href="/" class="nav-item">Inicio</a>
+                <a href="/servicios/" class="nav-item">Servicios</a>
+                <a href="/nosotros/" class="nav-item">Nosotros</a>
+                <a href="/contacto/" class="nav-item active">Contacto</a>
+            </nav>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Ruta de navegación">
+                <a href="/">Inicio</a>
+                <span>/</span>
+                <span>Contacto</span>
+            </nav>
+            <span class="section-subtitle">Estamos aquí</span>
+            <h1 class="page-hero-title">Hablemos</h1>
+            <p class="page-hero-desc">¿Necesitas una web, tienes un problema informático o quieres saber cuánto cuesta algo? Escríbenos y te respondemos sin rodeos en menos de 24 horas.</p>
+        </div>
+    </section>
+
+    <main class="page-content">
+
+        <!-- CONTACTO PRINCIPAL -->
+        <section class="contact-section" style="padding-top: 4rem;">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <span class="section-subtitle">Contacto directo</span>
+                        <h2 class="section-title">Cómo llegar a nosotros</h2>
+                        <p>Elige el canal que prefieras. Para proyectos nuevos, el formulario es la opción más cómoda. Para urgencias, escríbenos directamente al correo.</p>
+
+                        <div class="contact-methods">
+                            <div class="contact-method-card">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <h4>Correo electrónico</h4>
+                                    <p><a href="mailto:info@cefaro.net">info@cefaro.net</a></p>
+                                </div>
+                            </div>
+                            <!-- TODO: reemplaza con el teléfono real -->
+                            <div class="contact-method-card">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <h4>Teléfono</h4>
+                                    <p><a href="tel:+34000000000">+34 XXX XXX XXX</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-method-card">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <h4>Dónde estamos</h4>
+                                    <p>Baiona, Val Miñor · Pontevedra</p>
+                                </div>
+                            </div>
+                            <div class="contact-method-card">
+                                <i class="fa-solid fa-clock"></i>
+                                <div>
+                                    <h4>Horario de atención</h4>
+                                    <p>Lunes a viernes, 9:00 – 18:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <!-- Formulario vía Formspree: reemplaza FORMSPREE_TOKEN con tu token real -->
+                        <form class="contact-form" id="contact-form" action="https://formspree.io/f/FORMSPREE_TOKEN" method="POST">
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" name="name" required placeholder="Tu nombre...">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico</label>
+                                <input type="email" id="email" name="email" required placeholder="tuemail@dominio.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Servicio de interés</label>
+                                <select id="service" name="service">
+                                    <option value="">¿En qué podemos ayudarte?</option>
+                                    <option value="web">Página web o tienda online</option>
+                                    <option value="seo">SEO y posicionamiento local</option>
+                                    <option value="servidor">Servidores e infraestructura</option>
+                                    <option value="backup">Copias de seguridad</option>
+                                    <option value="correo">Correo electrónico corporativo</option>
+                                    <option value="seguridad">Ciberseguridad o forense</option>
+                                    <option value="3d">Impresión 3D</option>
+                                    <option value="digitalizacion">Digitalización de formatos</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensaje</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Cuéntanos qué necesitas..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                                Enviar consulta <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CÓMO TRABAJAMOS -->
+        <section class="catalog-section catalog-section--alt" style="margin-top:2rem;">
+            <div class="container">
+                <div style="text-align:center; max-width:600px; margin:0 auto 3rem;">
+                    <span class="section-subtitle">El proceso</span>
+                    <h2 class="section-title">Cómo trabajamos</h2>
+                    <p class="section-desc">Sin reuniones eternas ni burocracia. Así es un proyecto típico con Cefaro.</p>
+                </div>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3>Nos cuentas qué necesitas</h3>
+                            <p>Por correo, teléfono o formulario. Sin formularios de 20 campos ni demos obligatorias.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3>Te damos una propuesta</h3>
+                            <p>En menos de 24 horas tienes una propuesta con alcance y precio estimado. Sin letra pequeña.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3>Arrancamos el proyecto</h3>
+                            <p>Nos encargamos de todo. Tú participas cuando necesitamos tu información o aprobación.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h3>Entregamos y acompañamos</h3>
+                            <p>Una vez entregado el proyecto, seguimos disponibles. El soporte post-entrega es parte del servicio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <span class="logo-text">CEFARO<span class="dot">.net</span></span>
+                <p>Informática y webs para el Val Miñor y Vigo.</p>
+            </div>
+            <div class="footer-links">
+                <a href="/">Inicio</a>
+                <a href="/servicios/">Servicios</a>
+                <a href="/nosotros/">Nosotros</a>
+                <a href="/contacto/">Contacto</a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2026 Cefaro.net. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
