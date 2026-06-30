@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Principal -->
+    <title>Cefaro.net | Páginas Web e Informática en Baiona, Val Miñor y Vigo</title>
+    <meta name="description" content="Cefaro.net: empresa de informática y diseño web en Baiona (Val Miñor, Pontevedra). Hacemos páginas web, SEO, servidores y ciberseguridad para negocios de Vigo, Rías Baixas y toda Galicia.">
+    <meta name="keywords" content="páginas web Baiona, diseño web Val Miñor, informática Baiona, páginas web Vigo, teleco Baiona, ciberseguridad Vigo, desarrollo web Rías Baixas, páginas web Galicia, diseño web Pontevedra, páginas web Nigrán">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.cefaro.net/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.cefaro.net/">
+    <meta property="og:title" content="Cefaro.net | Páginas Web e Informática en Baiona y Vigo">
+    <meta property="og:description" content="Empresa local de informática y desarrollo web en Baiona (Val Miñor). Diseñamos webs, hacemos SEO y gestionamos servidores para negocios de la zona de Vigo y Rías Baixas.">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Cefaro.net">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Cefaro.net | Páginas Web e Informática en Baiona y Vigo">
+    <meta name="twitter:description" content="Empresa local de informática y desarrollo web en Baiona (Val Miñor). Webs, SEO, servidores y ciberseguridad para la zona de Vigo y Rías Baixas.">
+
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["LocalBusiness", "ProfessionalService"],
+      "name": "Cefaro",
+      "url": "https://www.cefaro.net",
+      "email": "info@cefaro.net",
+      "description": "Empresa de informática y diseño web en Baiona, Val Miñor (Pontevedra). Páginas web, SEO, servidores, ciberseguridad y copias de seguridad para negocios de Vigo y Rías Baixas.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Baiona",
+        "addressRegion": "Pontevedra",
+        "postalCode": "36300",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "42.1187",
+        "longitude": "-8.8541"
+      },
+      "areaServed": [
+        {"@type": "City", "name": "Baiona"},
+        {"@type": "City", "name": "Vigo"},
+        {"@type": "City", "name": "Nigrán"},
+        {"@type": "City", "name": "Gondomar"},
+        {"@type": "AdministrativeArea", "name": "Val Miñor"},
+        {"@type": "AdministrativeArea", "name": "Rías Baixas"},
+        {"@type": "AdministrativeArea", "name": "Pontevedra"}
+      ],
+      "knowsAbout": [
+        "Diseño de páginas web",
+        "Desarrollo web",
+        "SEO local",
+        "Informática",
+        "Telecomunicaciones",
+        "Ciberseguridad",
+        "Servidores"
+      ],
+      "priceRange": "€€",
+      "currenciesAccepted": "EUR"
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Stars Canvas Background -->
+    <canvas id="stars-canvas"></canvas>
+
+    <!-- Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#hero" class="logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 100 100" width="30" height="30">
+                        <polygon points="40,90 60,90 55,40 45,40" fill="#f8f9fa" />
+                        <polygon points="45,40 55,40 53,20 47,20" fill="#e63946" />
+                        <circle cx="50" cy="15" r="5" fill="#ffd54f" />
+                    </svg>
+                </span>
+                <span class="logo-text">CEFARO<span class="dot">.net</span></span>
+            </a>
+            <nav class="nav-links">
+                <a href="#hero" class="nav-item active">Inicio</a>
+                <a href="#services-section" class="nav-item">Servicios</a>
+                <a href="#about" class="nav-item">Nosotros</a>
+                <a href="#contact" class="nav-item">Contacto</a>
+            </nav>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">CEFARO</h1>
+            <p class="hero-subtitle">Páginas web e informática para negocios de Baiona, Val Miñor y Vigo</p>
+            <div class="hero-cta">
+                <a href="#services-section" class="btn btn-primary">Ver qué hacemos</a>
+                <a href="#contact" class="btn btn-secondary">Escribirnos</a>
+            </div>
+        </div>
+        <div class="hero-lighthouse-container">
+            <!-- SVG Lighthouse in Hero -->
+            <svg id="hero-lighthouse" class="lighthouse-svg" viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <radialGradient id="hero-beam-gradient" cx="0%" cy="50%" r="100%">
+                        <stop offset="0%" stop-color="#ffd54f" stop-opacity="1" />
+                        <stop offset="15%" stop-color="#ffd54f" stop-opacity="0.4" />
+                        <stop offset="60%" stop-color="#ffd54f" stop-opacity="0.08" />
+                        <stop offset="100%" stop-color="#ffd54f" stop-opacity="0" />
+                    </radialGradient>
+                    <radialGradient id="glow-gradient" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#ffd54f" stop-opacity="1" />
+                        <stop offset="40%" stop-color="#ffd54f" stop-opacity="0.6" />
+                        <stop offset="100%" stop-color="#ffd54f" stop-opacity="0" />
+                    </radialGradient>
+                </defs>
+
+                <!-- Beam Group that will rotate -->
+                <g id="hero-light-beam" class="light-beam-group" style="transform-origin: 50px 35px;">
+                    <polygon points="50,35 600,-15 600,85" fill="url(#hero-beam-gradient)" />
+                </g>
+
+                <!-- Base Rock -->
+                <path d="M10,190 Q50,180 90,190 L90,200 L10,200 Z" fill="#0f131a" />
+                <path d="M20,182 Q50,175 80,182 L80,192 L20,192 Z" fill="#171c26" />
+
+                <!-- Tower Body -->
+                <!-- Bottom segment (white) -->
+                <polygon points="36,180 64,180 61,140 39,140" fill="#f8f9fa" />
+                <!-- Middle segment (red) -->
+                <polygon points="39,140 61,140 58,100 42,100" fill="#e63946" />
+                <!-- Top segment (white) -->
+                <polygon points="42,100 58,100 55,60 45,60" fill="#f8f9fa" />
+                <!-- Small red ring -->
+                <polygon points="45,60 55,60 54,52 46,52" fill="#e63946" />
+
+                <!-- Balcony / Platform -->
+                <rect x="42" y="47" width="16" height="5" rx="1" fill="#111" />
+                <line x1="43" y1="43" x2="57" y2="43" stroke="#111" stroke-width="0.8" />
+                <line x1="45" y1="43" x2="45" y2="47" stroke="#111" stroke-width="0.5" />
+                <line x1="50" y1="43" x2="50" y2="47" stroke="#111" stroke-width="0.5" />
+                <line x1="55" y1="43" x2="55" y2="47" stroke="#111" stroke-width="0.5" />
+
+                <!-- Lantern Room (Glass chamber) -->
+                <rect x="46" y="30" width="8" height="13" fill="rgba(255, 255, 255, 0.15)" stroke="#111" stroke-width="0.8" />
+                <line x1="50" y1="30" x2="50" y2="43" stroke="#111" stroke-width="0.5" />
+
+                <!-- The light bulb -->
+                <circle cx="50" cy="35" r="8" fill="url(#glow-gradient)" class="light-glow-pulsate" />
+                <circle cx="50" cy="35" r="3" fill="#ffd54f" />
+
+                <!-- Dome Roof -->
+                <path d="M45,30 Q50,18 55,30 Z" fill="#111" />
+                <rect x="49" y="14" width="2" height="4" fill="#111" />
+                <circle cx="50" cy="12" r="1.5" fill="#ffd54f" />
+            </svg>
+        </div>
+        <div class="scroll-indicator">
+            <span class="mouse">
+                <span class="wheel"></span>
+            </span>
+            <p>Haz scroll para ver los servicios</p>
+        </div>
+    </section>
+
+    <!-- Split Scroll Services Section -->
+    <section id="services-section" class="services-section">
+        <div class="split-layout">
+
+            <!-- Left Side: Fixed Lighthouse Beam Guiding the Way -->
+            <div class="lighthouse-sticky-panel">
+                <div class="sticky-lighthouse-wrapper">
+                    <!-- Dynamic Lighthouse SVG -->
+                    <svg id="sticky-lighthouse" class="lighthouse-svg" viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <radialGradient id="sticky-beam-gradient" cx="0%" cy="50%" r="100%">
+                                <stop offset="0%" stop-color="#ffd54f" stop-opacity="1" />
+                                <stop offset="20%" stop-color="#ffd54f" stop-opacity="0.5" />
+                                <stop offset="60%" stop-color="#ffd54f" stop-opacity="0.1" />
+                                <stop offset="100%" stop-color="#ffd54f" stop-opacity="0" />
+                            </radialGradient>
+                            <radialGradient id="sticky-glow" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" stop-color="#ffd54f" stop-opacity="1" />
+                                <stop offset="40%" stop-color="#ffd54f" stop-opacity="0.5" />
+                                <stop offset="100%" stop-color="#ffd54f" stop-opacity="0" />
+                            </radialGradient>
+                        </defs>
+
+                        <!-- Interactive Rotating Beam -->
+                        <g id="interactive-light-beam" class="light-beam-group" style="transform-origin: 50px 35px;">
+                            <!-- Huge beam going to the right -->
+                            <polygon points="50,35 700,-65 700,135" fill="url(#sticky-beam-gradient)" />
+                        </g>
+
+                        <!-- Base Rock -->
+                        <path d="M5,190 Q50,180 95,190 L95,200 L5,200 Z" fill="#0c0e14" />
+                        <path d="M15,183 Q50,176 85,183 L85,193 L15,193 Z" fill="#151922" />
+
+                        <!-- Tower Body -->
+                        <polygon points="36,180 64,180 61,140 39,140" fill="#f8f9fa" />
+                        <polygon points="39,140 61,140 58,100 42,100" fill="#e63946" />
+                        <polygon points="42,100 58,100 55,60 45,60" fill="#f8f9fa" />
+                        <polygon points="45,60 55,60 54,52 46,52" fill="#e63946" />
+
+                        <!-- Balcony -->
+                        <rect x="42" y="47" width="16" height="5" rx="1" fill="#111" />
+                        <line x1="43" y1="43" x2="57" y2="43" stroke="#111" stroke-width="0.8" />
+
+                        <!-- Lantern Room & Glass -->
+                        <rect x="46" y="30" width="8" height="13" fill="rgba(255, 255, 255, 0.15)" stroke="#111" stroke-width="0.8" />
+                        <line x1="50" y1="30" x2="50" y2="43" stroke="#111" stroke-width="0.5" />
+
+                        <!-- Glow and Bulb -->
+                        <circle cx="50" cy="35" r="9" fill="url(#sticky-glow)" />
+                        <circle cx="50" cy="35" r="3" fill="#ffd54f" />
+
+                        <!-- Dome Roof -->
+                        <path d="M45,30 Q50,18 55,30 Z" fill="#111" />
+                        <rect x="49" y="14" width="2" height="4" fill="#111" />
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Right Side: Scrollable Services -->
+            <div class="services-scroll-panel">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">Lo que hacemos</span>
+                    <h2 class="section-title">Servicios de Cefaro</h2>
+                    <p class="section-desc">Hacemos webs, gestionamos dominios y servidores, y asesoramos en ciberseguridad. Si tienes un negocio en Baiona, Val Miñor o la zona de Vigo y necesitas presencia online o apoyo informático, estamos aquí.</p>
+                </div>
+
+                <div class="services-list">
+                    <!-- Service 1: Web Pages -->
+                    <div class="service-card" id="service-web" data-angle="-15">
+                        <div class="card-glow-border"></div>
+                        <div class="card-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3>Páginas Web a Medida</h3>
+                        <p class="service-summary">Hacemos tu web desde cero: diseño propio, adaptada a móvil y pensada para que cargue rápido. Sin plantillas genéricas ni soluciones de serie.</p>
+                        <ul class="card-features">
+                            <li><i class="fa-solid fa-check"></i> Diseño propio adaptado a tu negocio</li>
+                            <li><i class="fa-solid fa-check"></i> Funciona en móvil, tablet y ordenador</li>
+                            <li><i class="fa-solid fa-check"></i> Lista para posicionarse en Google</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2: Domains -->
+                    <div class="service-card" id="service-domains" data-angle="-2">
+                        <div class="card-glow-border"></div>
+                        <div class="card-icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <h3>Dominios y Correo Profesional</h3>
+                        <p class="service-summary">Registramos tu dominio, configuramos el correo con tu marca y nos encargamos de que todo esté activo y seguro sin que tengas que tocarlo.</p>
+                        <ul class="card-features">
+                            <li><i class="fa-solid fa-check"></i> Registro de dominios .es, .com y más</li>
+                            <li><i class="fa-solid fa-check"></i> Correo profesional con tu nombre de dominio</li>
+                            <li><i class="fa-solid fa-check"></i> Certificados SSL incluidos</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3: Internal Servers -->
+                    <div class="service-card" id="service-servers" data-angle="10">
+                        <div class="card-glow-border"></div>
+                        <div class="card-icon">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+                        <h3>Servidores e Infraestructura Interna</h3>
+                        <p class="service-summary">Si tu oficina necesita un servidor propio, red interna o VPN para el equipo en remoto, lo montamos y lo mantenemos para que no tengas que preocuparte.</p>
+                        <ul class="card-features">
+                            <li><i class="fa-solid fa-check"></i> Servidores locales y almacenamiento NAS</li>
+                            <li><i class="fa-solid fa-check"></i> Redes y VPN para trabajo remoto</li>
+                            <li><i class="fa-solid fa-check"></i> Gestión de usuarios y permisos</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 4: Cyber Forensics -->
+                    <div class="service-card" id="service-forensics" data-angle="22">
+                        <div class="card-glow-border"></div>
+                        <div class="card-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3>Análisis Forense y Ciberseguridad</h3>
+                        <p class="service-summary">Cuando pasa algo raro en un equipo o sistema, investigamos qué ocurrió, cómo entró el problema y cómo evitar que vuelva a pasar.</p>
+                        <ul class="card-features">
+                            <li><i class="fa-solid fa-check"></i> Análisis de equipos comprometidos</li>
+                            <li><i class="fa-solid fa-check"></i> Recuperación de datos tras incidente</li>
+                            <li><i class="fa-solid fa-check"></i> Informe de vulnerabilidades y medidas correctoras</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 5: SEO -->
+                    <div class="service-card" id="service-seo" data-angle="35">
+                        <div class="card-glow-border"></div>
+                        <div class="card-icon">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        </div>
+                        <h3>SEO y Posicionamiento Local</h3>
+                        <p class="service-summary">Que tu web aparezca cuando alguien de Vigo, Baiona o Val Miñor busca lo que ofreces. Trabajamos el SEO de forma técnica, con resultados reales.</p>
+                        <ul class="card-features">
+                            <li><i class="fa-solid fa-check"></i> Auditoría técnica de tu web actual</li>
+                            <li><i class="fa-solid fa-check"></i> Optimización para búsquedas locales y nacionales</li>
+                            <li><i class="fa-solid fa-check"></i> Mejora de velocidad de carga (Core Web Vitals)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 6: Backups -->
+                    <div class="service-card" id="service-backups" data-angle="48">
+                        <div class="card-glow-border"></div>
+                        <div class="card-icon">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                        </div>
+                        <h3>Copias de Seguridad</h3>
+                        <p class="service-summary">Configuramos copias automáticas de tus datos, en local y en la nube, para que un fallo de disco o un ransomware no te deje sin nada.</p>
+                        <ul class="card-features">
+                            <li><i class="fa-solid fa-check"></i> Backups automáticos y cifrados</li>
+                            <li><i class="fa-solid fa-check"></i> Almacenamiento local y en cloud</li>
+                            <li><i class="fa-solid fa-check"></i> Pruebas de restauración periódicas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text-column">
+                    <span class="section-subtitle">¿Quiénes Somos?</span>
+                    <h2 class="section-title">Informática local en el Val Miñor</h2>
+                    <p>En <strong>Cefaro</strong> llevamos años ayudando a negocios de Baiona, Val Miñor y la zona de Vigo con sus webs y con todo lo que tiene que ver con la informática. Somos un equipo pequeño y local, y eso se nota: sabemos cómo funciona la comarca y hablamos con nuestros clientes sin tecnicismos innecesarios.</p>
+                    <p>La mayoría de la gente que nos contacta necesita una web que les ayude a vender o a ser encontrados, o tiene un problema informático y no sabe a quién llamar. Nosotros nos ocupamos de eso, sin tarifas de grandes consultoras ni presupuestos inflados.</p>
+                    <div class="metrics">
+                        <div class="metric-item">
+                            <span class="metric-num">50+</span>
+                            <span class="metric-label">Proyectos entregados</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-num">Local</span>
+                            <span class="metric-label">Equipo en Baiona</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-num">24/7</span>
+                            <span class="metric-label">Soporte de emergencia</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual-column">
+                    <div class="faro-silhouette-wrapper">
+                        <div class="ocean-wave wave1"></div>
+                        <div class="ocean-wave wave2"></div>
+                        <i class="fa-solid fa-anchor anchor-decor"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-subtitle">Contacto</span>
+                    <h2 class="section-title">Hablemos</h2>
+                    <p>¿Necesitas una web, tienes un problema informático o quieres saber cuánto cuesta algo? Escríbenos y te respondemos sin rodeos.</p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method-card">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h4>Escríbenos</h4>
+                                <p>info@cefaro.net</p>
+                            </div>
+                        </div>
+                        <div class="contact-method-card">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h4>Dónde estamos</h4>
+                                <p>Baiona, Val Miñor · Pontevedra</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form" onsubmit="event.preventDefault(); alert('Mensaje enviado. ¡Nos pondremos en contacto muy pronto!');">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" required placeholder="Tu nombre...">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" required placeholder="tuemail@dominio.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" rows="5" required placeholder="¿En qué podemos ayudarte?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Enviar Consulta <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <span class="logo-text">CEFARO<span class="dot">.net</span></span>
+                <p>Informática y webs para el Val Miñor y Vigo.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#hero">Inicio</a>
+                <a href="#services-section">Servicios</a>
+                <a href="#about">Nosotros</a>
+                <a href="#contact">Contacto</a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2026 Cefaro.net. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
