@@ -7,31 +7,37 @@
     <!-- SEO Principal -->
     <title>Cefaro.net | Páginas Web e Informática en Baiona, Val Miñor y Vigo</title>
     <meta name="description" content="Cefaro.net: empresa de informática y diseño web en Baiona (Val Miñor, Pontevedra). Hacemos páginas web, SEO, servidores y ciberseguridad para negocios de Vigo, Rías Baixas y toda Galicia.">
-    <meta name="keywords" content="páginas web Baiona, diseño web Val Miñor, informática Baiona, páginas web Vigo, teleco Baiona, ciberseguridad Vigo, desarrollo web Rías Baixas, páginas web Galicia, diseño web Pontevedra, páginas web Nigrán">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.cefaro.net/">
+    <link rel="canonical" href="https://cefaro.net/">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.cefaro.net/">
-    <meta property="og:title" content="Cefaro.net | Páginas Web e Informática en Baiona y Vigo">
+    <meta property="og:url" content="https://cefaro.net/">
+    <meta property="og:title" content="Cefaro.net | Páginas Web e Informática en Baiona, Val Miñor y Vigo">
     <meta property="og:description" content="Empresa local de informática y desarrollo web en Baiona (Val Miñor). Diseñamos webs, hacemos SEO y gestionamos servidores para negocios de la zona de Vigo y Rías Baixas.">
     <meta property="og:locale" content="es_ES">
     <meta property="og:site_name" content="Cefaro.net">
+    <meta property="og:image" content="https://cefaro.net/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Cefaro.net — Páginas web e informática en Baiona, Val Miñor y Vigo">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Cefaro.net | Páginas Web e Informática en Baiona y Vigo">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cefaro.net | Páginas Web e Informática en Baiona, Val Miñor y Vigo">
     <meta name="twitter:description" content="Empresa local de informática y desarrollo web en Baiona (Val Miñor). Webs, SEO, servidores y ciberseguridad para la zona de Vigo y Rías Baixas.">
+    <meta name="twitter:image" content="https://cefaro.net/og-image.jpg">
 
     <!-- Schema.org LocalBusiness -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": ["LocalBusiness", "ProfessionalService"],
+      "@type": ["LocalBusiness", "ITService", "ProfessionalService"],
       "name": "Cefaro",
-      "url": "https://www.cefaro.net",
+      "url": "https://cefaro.net",
       "email": "info@cefaro.net",
+      "image": "https://cefaro.net/og-image.jpg",
       "description": "Empresa de informática y diseño web en Baiona, Val Miñor (Pontevedra). Páginas web, SEO, servidores, ciberseguridad y copias de seguridad para negocios de Vigo y Rías Baixas.",
       "address": {
         "@type": "PostalAddress",
@@ -64,7 +70,19 @@
         "Servidores"
       ],
       "priceRange": "€€",
-      "currenciesAccepted": "EUR"
+      "currenciesAccepted": "EUR",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de informática y desarrollo web",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Páginas Web a Medida"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Dominios y Correo Profesional"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Servidores e Infraestructura Interna"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Análisis Forense y Ciberseguridad"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SEO y Posicionamiento Local"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Copias de Seguridad"}}
+        ]
+      }
     }
     </script>
 
@@ -95,7 +113,7 @@
                 </span>
                 <span class="logo-text">CEFARO<span class="dot">.net</span></span>
             </a>
-            <nav class="nav-links">
+            <nav class="nav-links" aria-label="Menú principal">
                 <a href="#hero" class="nav-item active">Inicio</a>
                 <a href="#services-section" class="nav-item">Servicios</a>
                 <a href="#about" class="nav-item">Nosotros</a>
@@ -112,8 +130,8 @@
     <!-- Hero Section -->
     <section id="hero" class="hero-section">
         <div class="hero-content">
-            <h1 class="hero-title">CEFARO</h1>
-            <p class="hero-subtitle">Páginas web e informática para negocios de Baiona, Val Miñor y Vigo</p>
+            <p class="hero-title">CEFARO</p>
+            <h1 class="hero-subtitle">Páginas web e informática para negocios de Baiona, Val Miñor y Vigo</h1>
             <div class="hero-cta">
                 <a href="#services-section" class="btn btn-primary">Ver qué hacemos</a>
                 <a href="#contact" class="btn btn-secondary">Escríbenos</a>
@@ -394,7 +412,15 @@
                             <i class="fa-solid fa-envelope"></i>
                             <div>
                                 <h4>Escríbenos</h4>
-                                <p>info@cefaro.net</p>
+                                <p><a href="mailto:info@cefaro.net">info@cefaro.net</a></p>
+                            </div>
+                        </div>
+                        <!-- TODO: reemplaza el número con tu teléfono real y actualiza también "telephone" en el schema JSON-LD -->
+                        <div class="contact-method-card">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h4>Llámanos</h4>
+                                <p><a href="tel:+34000000000">+34 XXX XXX XXX</a></p>
                             </div>
                         </div>
                         <div class="contact-method-card">
@@ -407,20 +433,21 @@
                     </div>
                 </div>
                 <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contact-form" onsubmit="event.preventDefault(); alert('Mensaje enviado. ¡Nos pondremos en contacto muy pronto!');">
+                    <!-- Formulario vía Formspree: crea cuenta en formspree.io y reemplaza FORMSPREE_TOKEN -->
+                    <form class="contact-form" id="contact-form" action="https://formspree.io/f/FORMSPREE_TOKEN" method="POST">
                         <div class="form-group">
                             <label for="name">Nombre</label>
-                            <input type="text" id="name" required placeholder="Tu nombre...">
+                            <input type="text" id="name" name="name" required placeholder="Tu nombre...">
                         </div>
                         <div class="form-group">
                             <label for="email">Correo Electrónico</label>
-                            <input type="email" id="email" required placeholder="tuemail@dominio.com">
+                            <input type="email" id="email" name="email" required placeholder="tuemail@dominio.com">
                         </div>
                         <div class="form-group">
                             <label for="message">Mensaje</label>
-                            <textarea id="message" rows="5" required placeholder="¿En qué podemos ayudarte?"></textarea>
+                            <textarea id="message" name="message" rows="5" required placeholder="¿En qué podemos ayudarte?"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block">Enviar Consulta <i class="fa-solid fa-paper-plane"></i></button>
+                        <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Enviar Consulta <i class="fa-solid fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>

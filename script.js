@@ -210,4 +210,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', highlightNav);
 
+    /* -------------------------------------------------------------
+       6. CONTACT FORM — Formspree async submit
+    ------------------------------------------------------------- */
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = document.getElementById('submit-btn');
+            const action = contactForm.getAttribute('action');
+
+            if (action.includes('FORMSPREE_TOKEN')) {
+                contactForm.innerHTML = '<p class="form-notice"><i class="fa-solid fa-triangle-exclamation"></i> El formulario no está configurado todavía. Escríbenos directamente a <a href="mailto:info@cefaro.net">info@cefaro.net</a></p>';
+                return;
+            }
+
+            btn.disabled = true;
+            btn.textContent = 'Enviando…';
+
+            try {
+                const data = new FormData(contactForm);
+                const res = await fetch(action, {
+                    method: 'POST',
+                    body: data,
+                    headers: { 'Accept': 'application/json' }
+                });
+                if (res.ok) {
+                    contactForm.innerHTML = '<p class="form-success"><i class="fa-solid fa-circle-check"></i> Mensaje enviado. ¡Nos pondremos en contacto muy pronto!</p>';
+                } else {
+                    throw new Error('server error');
+                }
+            } catch {
+                btn.disabled = false;
+                btn.innerHTML = 'Enviar Consulta <i class="fa-solid fa-paper-plane"></i>';
+                const err = document.createElement('p');
+                err.className = 'form-error';
+                err.innerHTML = 'Error al enviar. Escríbenos a <a href="mailto:info@cefaro.net">info@cefaro.net</a>';
+                contactForm.appendChild(err);
+            }
+        });
+    }
+
 });

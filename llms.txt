@@ -1,0 +1,25 @@
+# Cefaro.net
+
+> Empresa de informática y diseño web en Baiona, Val Miñor (Pontevedra, Galicia). Servicios para negocios de Vigo, Rías Baixas y toda Galicia.
+
+## Quiénes somos
+
+Cefaro es un equipo local con base en Baiona (Val Miñor, Pontevedra). Llevamos años ayudando a negocios de la comarca con sus webs y con todo lo relacionado con la informática. Trabajamos sin tecnicismos innecesarios y sin tarifas de grandes consultoras.
+
+## Servicios
+
+- **Páginas Web a Medida**: Diseño propio, adaptado a móvil, rápido y orientado a posicionarse en Google.
+- **Dominios y Correo Profesional**: Registro de dominios .es/.com, correo con tu marca, certificados SSL.
+- **Servidores e Infraestructura Interna**: Servidores locales, NAS, redes y VPN para trabajo remoto.
+- **Análisis Forense y Ciberseguridad**: Investigación de incidentes, recuperación de datos, informe de vulnerabilidades.
+- **SEO y Posicionamiento Local**: SEO técnico orientado a búsquedas locales en Vigo, Baiona y Val Miñor.
+- **Copias de Seguridad**: Backups automáticos cifrados en local y en cloud, con pruebas de restauración.
+
+## Zona de servicio
+
+Baiona, Val Miñor, Vigo, Nigrán, Gondomar, Rías Baixas, Pontevedra.
+
+## Contacto
+
+- Email: info@cefaro.net
+- Web: https://cefaro.net

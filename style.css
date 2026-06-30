@@ -910,3 +910,44 @@ a {
         padding: 2rem;
     }
 }
+
+/* -------------------------------------------------------------
+   FORM STATES
+------------------------------------------------------------- */
+.form-success,
+.form-notice,
+.form-error {
+    padding: 1.25rem 1.5rem;
+    border-radius: 0.75rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.form-success {
+    background: rgba(34, 197, 94, 0.1);
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    color: #86efac;
+}
+
+.form-notice {
+    background: rgba(234, 179, 8, 0.1);
+    border: 1px solid rgba(234, 179, 8, 0.3);
+    color: #fde047;
+}
+
+.form-error {
+    background: rgba(230, 57, 70, 0.1);
+    border: 1px solid rgba(230, 57, 70, 0.3);
+    color: #fca5a5;
+    margin-top: 1rem;
+}
+
+.form-success a,
+.form-notice a,
+.form-error a {
+    color: inherit;
+    text-decoration: underline;
+}
