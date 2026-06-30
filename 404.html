@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>404 — Página no encontrada | Cefaro.net</title>
+    <meta name="description" content="Esta página no existe. Vuelve al inicio de Cefaro.net.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://cefaro.net/">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="/manifest.json">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <canvas id="stars-canvas"></canvas>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="/" class="logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 100 100" width="30" height="30">
+                        <polygon points="40,90 60,90 55,40 45,40" fill="#f8f9fa" />
+                        <polygon points="45,40 55,40 53,20 47,20" fill="#e63946" />
+                        <circle cx="50" cy="15" r="5" fill="#ffd54f" />
+                    </svg>
+                </span>
+                <span class="logo-text">CEFARO<span class="dot">.net</span></span>
+            </a>
+            <nav class="nav-links" aria-label="Menú principal">
+                <a href="/" class="nav-item">Inicio</a>
+                <a href="/servicios/" class="nav-item">Servicios</a>
+                <a href="/nosotros/" class="nav-item">Nosotros</a>
+                <a href="/contacto/" class="nav-item">Contacto</a>
+            </nav>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <main style="min-height: 72vh; display: flex; align-items: center; position: relative; z-index: 1;">
+        <div class="container" style="text-align: center; padding: 5rem 1.5rem;">
+            <div class="step-number" style="font-size: clamp(5rem, 20vw, 8rem); display: block; margin-bottom: 1.5rem; line-height: 1;">
+                404
+            </div>
+            <h1 class="page-hero-title" style="margin-bottom: 1.25rem;">
+                Página no encontrada
+            </h1>
+            <p class="page-hero-desc" style="margin-bottom: 2.5rem;">
+                Esta dirección no existe o ha cambiado de ubicación. Puede que hayas seguido un enlace roto o tecleado mal la URL.
+            </p>
+            <div class="hero-cta" style="justify-content: center;">
+                <a href="/" class="btn btn-primary">Ir al inicio <i class="fa-solid fa-house"></i></a>
+                <a href="/contacto/" class="btn btn-secondary">Contactar</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <span class="logo-text">CEFARO<span class="dot">.net</span></span>
+                <p>Informática y webs para el Val Miñor y Vigo.</p>
+            </div>
+            <div class="footer-links">
+                <a href="/">Inicio</a>
+                <a href="/servicios/">Servicios</a>
+                <a href="/nosotros/">Nosotros</a>
+                <a href="/contacto/">Contacto</a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2026 Cefaro.net. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/34000000000" class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="/script.js" defer></script>
+</body>
+</html>

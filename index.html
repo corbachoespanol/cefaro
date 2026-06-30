@@ -11,6 +11,7 @@
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="canonical" href="https://cefaro.net/">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="/manifest.json">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -445,6 +446,7 @@
                 <div class="contact-form-wrapper">
                     <!-- Formulario vía Formspree: crea cuenta en formspree.io y reemplaza FORMSPREE_TOKEN -->
                     <form class="contact-form" id="contact-form" action="https://formspree.io/f/FORMSPREE_TOKEN" method="POST">
+                        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
                         <div class="form-group">
                             <label for="name">Nombre</label>
                             <input type="text" id="name" name="name" required placeholder="Tu nombre...">
@@ -483,7 +485,11 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+    <!-- TODO: reemplaza 34000000000 con tu número de WhatsApp Business real -->
+    <a href="https://wa.me/34000000000" class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js" defer></script>
 </body>
 </html>

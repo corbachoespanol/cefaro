@@ -145,11 +145,16 @@ document.addEventListener('DOMContentLoaded', () => {
        4. HEADER SCROLL EFFECT & NAV TOGGLE
     ------------------------------------------------------------- */
     const header = document.querySelector('.main-header');
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
+        }
+        if (scrollIndicator) {
+            scrollIndicator.style.opacity = window.scrollY > 80 ? '0' : '1';
         }
     });
 
@@ -157,58 +162,56 @@ document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.getElementById('nav-toggle');
     const navLinks = document.querySelector('.nav-links');
 
+    function closeNav() {
+        if (!navLinks) return;
+        navLinks.classList.remove('active');
+        const spans = navToggle.querySelectorAll('span');
+        spans[0].style.transform = 'none';
+        spans[1].style.opacity = '1';
+        spans[2].style.transform = 'none';
+    }
+
     if (navToggle && navLinks) {
         navToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
-            
-            // Animation for toggle lines
             const spans = navToggle.querySelectorAll('span');
-            spans[0].style.transform = navLinks.classList.contains('active') 
+            spans[0].style.transform = navLinks.classList.contains('active')
                 ? 'rotate(45deg) translate(6px, 6px)' : 'none';
-            spans[1].style.opacity = navLinks.classList.contains('active') 
+            spans[1].style.opacity = navLinks.classList.contains('active')
                 ? '0' : '1';
-            spans[2].style.transform = navLinks.classList.contains('active') 
+            spans[2].style.transform = navLinks.classList.contains('active')
                 ? 'rotate(-45deg) translate(5px, -5px)' : 'none';
         });
 
-        // Close nav on click
+        // Close nav on nav-item click or outside click
         document.querySelectorAll('.nav-item').forEach(item => {
-            item.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                const spans = navToggle.querySelectorAll('span');
-                spans[0].style.transform = 'none';
-                spans[1].style.opacity = '1';
-                spans[2].style.transform = 'none';
-            });
+            item.addEventListener('click', closeNav);
         });
-    }
 
-    /* -------------------------------------------------------------
-       5. ACTIVE NAV NAVIGATION ON SCROLL
-    ------------------------------------------------------------- */
-    const sections = document.querySelectorAll('section');
-    const navItems = document.querySelectorAll('.nav-item');
-
-    function highlightNav() {
-        let scrollPosition = window.scrollY + 120; // offset for sticky header
-
-        sections.forEach(section => {
-            const top = section.offsetTop;
-            const height = section.offsetHeight;
-            const id = section.getAttribute('id');
-
-            if (scrollPosition >= top && scrollPosition < top + height) {
-                navItems.forEach(item => {
-                    item.classList.remove('active');
-                    if (item.getAttribute('href') === `#${id}`) {
-                        item.classList.add('active');
-                    }
-                });
+        document.addEventListener('click', (e) => {
+            if (navLinks.classList.contains('active') &&
+                !navLinks.contains(e.target) &&
+                !navToggle.contains(e.target)) {
+                closeNav();
             }
         });
     }
 
-    window.addEventListener('scroll', highlightNav);
+    /* -------------------------------------------------------------
+       5. ACTIVE NAV — URL PATHNAME
+    ------------------------------------------------------------- */
+    const navItems = document.querySelectorAll('.nav-item');
+    const currentPath = window.location.pathname;
+
+    navItems.forEach(item => {
+        const href = item.getAttribute('href');
+        item.classList.remove('active');
+        if (href === currentPath) {
+            item.classList.add('active');
+        } else if (href !== '/' && currentPath.startsWith(href)) {
+            item.classList.add('active');
+        }
+    });
 
     /* -------------------------------------------------------------
        6. CONTACT FORM — Formspree async submit
@@ -250,5 +253,39 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    /* -------------------------------------------------------------
+       7. SCROLL ANIMATIONS — Intersection Observer
+    ------------------------------------------------------------- */
+    const animatableSelectors = '.catalog-card, .value-card, .process-step, .contact-method-card';
+    const animatables = document.querySelectorAll(animatableSelectors);
+
+    if (animatables.length > 0 && 'IntersectionObserver' in window) {
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.transitionDelay = `${i * 60}ms`;
+                    entry.target.classList.add('animate-in');
+                    io.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+        animatables.forEach(el => {
+            el.classList.add('animate-ready');
+            io.observe(el);
+        });
+    }
+
+    /* -------------------------------------------------------------
+       8. CATALOG CARD — inject "Solicitar" CTA link
+    ------------------------------------------------------------- */
+    document.querySelectorAll('.catalog-card').forEach(card => {
+        const cta = document.createElement('a');
+        cta.href = '/contacto/';
+        cta.className = 'catalog-card-cta';
+        cta.innerHTML = 'Solicitar presupuesto <i class="fa-solid fa-arrow-right"></i>';
+        card.appendChild(cta);
+    });
 
 });
