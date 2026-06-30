@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /* -------------------------------------------------------------
-       6. CONTACT FORM — Formspree async submit
+       6. CONTACT FORM — Web3Forms async submit
     ------------------------------------------------------------- */
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const btn = document.getElementById('submit-btn');
             const action = contactForm.getAttribute('action');
 
-            if (action.includes('FORMSPREE_TOKEN')) {
+            if (action.includes('FORMSPREE_TOKEN') || action.includes('access_key=YOUR')) {
                 contactForm.innerHTML = '<p class="form-notice"><i class="fa-solid fa-triangle-exclamation"></i> El formulario no está configurado todavía. Escríbenos directamente a <a href="mailto:info@cefaro.net">info@cefaro.net</a></p>';
                 return;
             }
